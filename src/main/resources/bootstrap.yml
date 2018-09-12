@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        tags: sjc
+        acl-token: p2BE1AtpwPasbrxZdC6k+eXA==
+      config:
+        format: properties
+        data-key: sj-system-dev
+        enabled: true
+        acl-token: p2BE1AtpwPasbrxZdC6k+eXA==
+
+
+
+
+  profiles:
+    active: dev
+
+  application:
+    name: sj-system
+server:
+  port: 7777
